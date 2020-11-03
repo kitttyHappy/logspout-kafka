@@ -127,7 +127,7 @@ func (a *KafkaAdapter) formatMessage(message *router.Message) (*sarama.ProducerM
 
 	return &sarama.ProducerMessage{
 		Topic: a.topic,
-    Key: message.Container.Name,
+    		Key: message.Container.Name,
 		Value: encoder,
 	}, nil
 }
